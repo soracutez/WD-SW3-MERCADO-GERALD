@@ -1,0 +1,174 @@
+/*CSS for Page 2 - Footer Gallery*/
+
+body {
+    background-color: lightpink;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+footer.default-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 5;
+    text-align: center;
+    margin-bottom: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.navbar a:hover{
+    color:yellow;
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Static Footer Designs*/
+.static-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Animated Footer Designs*/
+.animated-footer {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Animation Definitions*/
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/*Static Footer Color*/
+.static-footer1 {
+    background-color: #9C27B0;
+}
+
+.static-footer2 {
+    background-color: #FF9800;
+}
+
+.static-footer3 {
+    background-color: #f44336;
+}
+
+.static-footer4 {
+    background-color: #2196F3;
+}
+
+.static-footer5 {
+    background-color: #4CAF50;
+}
+
+/*Define animations for each animated-footer class*/
+.animated-footer1 {
+    background-color: #9C27B0;
+    animation-name: slideInFromTop;
+    animation-duration: 1s;
+}
+.animated-footer2 {
+    background-color: #FF9800;
+    animation-name: slideInFromBottom;
+    animation-duration: 1s;
+}
+.animated-footer3 {
+    background-color: #f44336;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+.animated-footer4 {
+    background-color: #2196F3;
+    animation-name: rotate;
+    animation-duration: 1s;
+}
+.animated-footer5 {
+    background-color: #4CAF50;
+    animation-name: scale;
+    animation-duration: 1s;
+}
+
+
