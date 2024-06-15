@@ -1,23 +1,15 @@
-/*CSS for Home Page*/
-
+/* CSS for Home Page */
 body {
-    margin: 0;
+    margin: 20px;
     padding: 0;
-    background-color: lightpink;
-}
-
-#page-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-image: url(../img/minimalistWallpaper.jpg);
 }
 
 header {
-    background-color: #333;
     color: #fff;
-    padding: 5px;
-    text-align: center;
-    margin-bottom: 20px;
+    padding: 0px;
+    text-align: right;
+    margin: 5px;
     width: 100%;
 }
 
@@ -32,62 +24,13 @@ footer {
     bottom: 0;
 }
 
-
-/*CSS for Home Page - Navbar*/
-.navbar {
-    margin-top: 20px;
-}
-
-.navbar a {
-    color: #fff;
+/*Buttons CSS Design*/
+.buttons {
+    color: white;
     text-decoration: none;
-    margin: 0 20px;
+    padding: 20px;
 }
 
-.navbar a:hover{
-    color:yellow;
+.buttons:hover{
+    color: red;
 }
-
-#content-wrap {
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-    margin: 10px;
-}
-
-#content2-wrap {
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-    margin: 10px;
-}
-
-#header1 {
-    padding: 5px;
-    background-color: #4CAF50;
-}
-
-/*Animated Header Designs*/
-.animatedHeader {
-    animation-fill-mode: forwards;
-}
-
-/*Animation Definitions*/
-@keyframes slideInFromTop {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-#animatedHeader1 {
-    animation-name: slideInFromTop;
-    animation-duration: 1s;
-    padding: 5px;
-}
-
-
