@@ -1,34 +1,61 @@
-/*CSS for Page 1 - Header Gallery*/
-
+/* CSS for Page 1 - Header Gallery */
 body {
-    background-color: lightpink;
+    background-color: purple;
     margin: 0;
     padding: 0;
     padding-bottom: 60px;
     position: relative;
 }
 
-header {
+nav#page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
     background-color: #333;
     color: #fff;
-    padding: 5px;
+}
+
+.header1Title {
+    text-align: center;
+}
+
+.header1Title h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: black;
+    margin: 0;
+    padding: 10px;
+}
+
+.header2Title {
+    text-align: center;
+}
+
+.header2Title h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: black;
+    margin: 0;
+    padding: 10px;
+}
+
+header {
     text-align: center;
     margin-bottom: 20px;
-    width: 100%;
 }
 
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 5;
+    padding: 5px 0;
     text-align: center;
-    margin-bottom: 0px;
-    width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    width: 100%;
 }
 
-/*CSS for Home Page - Navbar*/
+/* CSS for Home Page - Navbar */
 .navbar {
     margin-top: 20px;
 }
@@ -39,114 +66,440 @@ footer {
     margin: 0 20px;
 }
 
-.navbar a:hover{
-    color:yellow;
+.navbar a:hover {
+    color: yellow;
 }
 
-#page-container {
+/* Page 1 - Static Header Designs */
+.header1 {
+    background-color: pink;
+    padding: 10px;
+    text-align: center;
+}
+
+.headerDesign1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: wheat;
+}
+
+.navbarDesign1 {
+    padding: 5px;
+    margin-left: auto;
+}
+
+.logo1 {
+    height: auto;
+    max-height: 60px;
+    width: auto;
+    max-width: 100%;
+    margin-right: 20px;
+}
+
+.buttons1 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Page 2 - Static Header Designs */
+.header2 {
+    background-color: pink;
+    padding: 10px;
+    text-align: center;
+}
+
+.headerDesign2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+}
+
+.navbarDesign2 {
+    display: flex; /* Ensure the navbar is a flex container */
+    align-items: center; /* Vertically center items */
+    margin-left: auto; /* Push it to the right */
+}
+
+.logo2 {
+    height: auto;
+    max-height: 60px;
+    width: auto;
+    max-width: 100%;
+    margin-right: 20px;
+}
+
+.buttons2 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Search bar styles */
+.search-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-left: 10px; /* Adjust margin as needed */
+    outline: 2px solid #ccc; /* Add 2px solid outline */
+    padding: 5px; /* Adjust padding as needed */
+    border-radius: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+}
+
+.search-container button {
+    background-color:white;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+}
+
+
+/* Page 3 - Static Header Designs */
+.header3 {
+    background-color: pink;
+    padding: 10px;
+    text-align: center;
+}
+
+.headerDesign3 {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+}
+
+.navbarDesign3 {
+    display: flex;
+    align-items: center;
+}
+
+.logo3 {
+    height: 50px;
+    margin-right: 20px; /* Add some margin between logo and navigation */
+}
+
+.buttons3 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid black; /* Add border */
+    margin: 0 5px; /* Adjust margins between buttons */
+}
+
+
+
+.header4 {
+    background-color: pink;
+    padding: 10px;
+    text-align: center;
+}
+
+.headerDesign4 {
+    display: flex;
+    justify-content: center; /* Adjust as needed */
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+}
+
+.navbarDesign4 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbarDesign42 {
+    display: flex;
+    align-items: flex-start;
+
+}
+.logo4 {
+    height: 50px;
+}
+
+.buttons4 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 5px; /* Adjust margins between buttons */
+}
+
+.buttons42 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 5px; /* Adjust margins between buttons */
+}
+
+
+/* Page 5 - Static Header Designs */
+.header5 {
+    background-color: pink;
+    padding: 10px;
+    text-align: center;
+}
+
+.headerDesign5 {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: wheat;
+}
+
+.logo5 {
+    height: auto;
+    max-height: 60px;
+    width: auto;
+    max-width: 100%;
+    margin-right: 20px;
+}
+
+.navbarDesign5 {
+    display: flex;
+    align-items: center;
+}
+
+.buttons5 {
+    display: inline-block;
+    padding: 10px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    background-color: darkred;
+    border: 2px;
+    color: black;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+/* CSS for Animated Header Designs */
+
+/* CSS for Animated Header Designs */
+
+/* Common header styles */
+.animated-designs-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    gap: 20px;
 }
 
-/*Page 1 - Static Header Designs*/
-#header1, #animatedHeader1 {
-    background-color: #4CAF50;
-}
-#header2, #animatedHeader2 {
-    background-color: #2196F3;
-}
-#header3, #animatedHeader3 {
-    background-color: #f44336;
-}
-#header4, #animatedHeader4 {
-    background-color: #FF9800;
-}
-#header5, #animatedHeader5 {
-    background-color: #9C27B0;
-}
-
-/*Animated Header Designs*/
-.animatedHeader {
-    animation-fill-mode: forwards;
-}
-
-/*Animation Definitions*/
-@keyframes slideInFromTop {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideInFromBottom {
-    from {
-        transform: translateY(100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
+/* Animation for Design 1 */
+@keyframes fadeInButtons1A {
+    0% {
         opacity: 0;
+        transform: translateY(-20px);
     }
-    to {
+    100% {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
+.headerAnimDesign1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: wheat;
+    animation: fadeInButtons1A 1s ease-out;
+}
+
+/* Animation for Design 2 */
+@keyframes slideInButtons2A {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
     }
-    to {
-        transform: rotate(360deg);
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
-@keyframes scale {
-    from {
+.headerAnimDesign2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    animation: slideInButtons2A 1s ease-out;
+}
+
+/* Animation for Design 3 */
+@keyframes rotateInButtons3A {
+    0% {
+        opacity: 0;
+        transform: rotate(-180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+.headerAnimDesign3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    animation: rotateInButtons3A 1s ease-out;
+}
+
+/* Animation for Design 4 */
+@keyframes scaleInButtons4A {
+    0% {
+        opacity: 0;
         transform: scale(0);
     }
-    to {
+    100% {
+        opacity: 1;
         transform: scale(1);
     }
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+.headerAnimDesign4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    animation: scaleInButtons4A 1s ease-out;
+}
+
+/* Animation for Design 5 */
+@keyframes slideUpButtons5A {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
         transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-30px);
-    }
-    60% {
-        transform: translateY(-15px);
     }
 }
 
-/*Define animations for each animatedHeader class*/
-#animatedHeader1 {
-    animation-name: slideInFromTop;
-    animation-duration: 1s;
+.headerAnimDesign5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: wheat;
+    animation: slideUpButtons5A 1s ease-out;
 }
-#animatedHeader2 {
-    animation-name: slideInFromBottom;
-    animation-duration: 1s;
+
+/* Search bar styles */
+.search-containerAnim {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    outline: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 20px;
 }
-#animatedHeader3 {
-    animation-name: fadeIn;
-    animation-duration: 1s;
+
+.search-containerAnim input[type="text"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
 }
-#animatedHeader4 {
-    animation-name: rotate;
-    animation-duration: 1s;
+
+.search-containerAnim button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    margin-left: -2px; /* Adjust to align with input */
 }
-#animatedHeader5 {
-    animation-name: bounce;
-    animation-duration: 1s;
+
+/* Specific logo and buttons styles */
+.Animlogo1, .Animlogo2, .Animlogo3, .Animlogo4, .Animlogo5 {
+    height: auto;
+    max-height: 60px;
+    width: auto;
+    max-width: 100%;
+    margin-right: 20px;
 }
+
+.buttons1A, .buttons2A, .buttons3A, .Animbuttons4, .Animbuttons42, .buttons5A {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.buttons1A {
+    /* Additional styles for button set in Design 1 */
+}
+
+.buttons2A {
+    /* Additional styles for button set in Design 2 */
+}
+
+.buttons3A {
+    border: 1px solid black; /* Additional styles for button set in Design 3 */
+}
+
+.Animbuttons4 {
+    display: flex;
+    justify-content: flex-start;
+    /* Additional styles for button set in Design 4 */
+}
+
+.Animbuttons42 {
+    display: flex;
+    justify-content: space-between;
+    /* Additional styles for button set in Design 4 */
+}
+
+.buttons5A {
+    background-color: darkred;
+    border: 2px solid black;
+    border-radius: 15px; /* Additional styles for button set in Design 5 */
+    margin-left: 10px;
+}
+
